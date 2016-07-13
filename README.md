@@ -2,6 +2,6 @@
 App to match your skin tone to the perfect foundation
 madina
 j'nya
-ariel
+ariel Sanders
 License:
 MIT License
