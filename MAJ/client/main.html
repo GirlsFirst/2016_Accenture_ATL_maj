@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<template name="page">
 	<head>
 		<!-- Setup for Bootstrap-->
 		<meta charset="utf-8">
@@ -10,30 +9,30 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
 		<!-- link to the css file-->
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<!--Setup for the image slider-->
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	</head>
 	<body>
 	<center> 
-		<img src="logo.png"  alt="MAJ Logo" height="236" width="304"> 
+		<img src="pics/logo.png"  alt="MAJ Logo" height="236" width="304"> 
+		<center><h2> Find the PERFECT cosmetics for you. </h2></center>
+		<center><h2> Find your match. </h2></center>
 	</center>
 	 <div class="container">
 		<div class="row">
 		<div class="col-xs-3">
-			 <img class="img-responsive" src="nails.jpg" alt="Nails"> 
-			 <img class="img-responsive" src="foundation.png" alt="Foundation"> 
-			<!--<h2> Find the PERFECT cosmetics for you. </h2>
-			<h2> Find your match. </h2> -->
+			 <a href="http://localhost:3000/picpage"><img class="img-responsive" src="pics/nails.jpg" alt="Nails"> </a>
+			 <a href="http://localhost:3000/picpage"><img class="img-responsive" src="pics/foundation.jpg" alt="Foundation"> </a>
 		</div>
 		</div>
 		<div class="row">
 		<div class="col-xs-3">
-			 <img class="img-responsive" src="lipstick.jpg" alt="Lipstick"> 
-			 <img class="img-responsive" src="concealer.jpg" alt="Concelaer"> 
+			 <a href="http://localhost:3000/picpage"><img class="img-responsive" src="pics/lipstick.jpg" alt="Lipstick"> </a>
+			 <a href="http://localhost:3000/picpage"><img class="img-responsive" src="pics/concealer.jpg" alt="Concelaer"> </a>
 		</div>
 		</div>
 	</div>
 	
 	</body>	
-</html>
+	</template>

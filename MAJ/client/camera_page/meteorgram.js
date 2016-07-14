@@ -5,3 +5,4 @@ if (Meteor.isClient){
     }
   });
 }
+Router.route('/picpage');
