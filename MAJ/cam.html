@@ -2,11 +2,15 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css"> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+<center><h2 id=camheader>Take a picture of the section of skin you want to be matched. </h2></center>
 <script src="webcam.js"></script>
 <script src="main.js"></script>
-    <div id="my_camera" style="width:320px; height:240px; center"></div>
+    <h1><div id="my_camera" style="width:320px; height:240px; margin:0 auto;"></div></h1>
     
     <script language="JavaScript">	
 	
@@ -28,19 +32,18 @@
 			blue= imgaData.data[2];
 		}
 		function RGB(){
-			document.getElementById("test").innerHTML = getMatch(red, green, blue); 
+			var colorCode = getMatch(red, green, blue); 
+			showProducts(colorCode);
 		}
     
 
     </script>
 	<center>
-	<a href="javascript:void(take_snapshot())">Take Snapshot</a>	
+	<a href="javascript:void(take_snapshot())"class="btn btn-primary btn-lg active" role="button">Take Snapshot</a>	
 	<div id = "new" style = "display:none">
 		<img id="my_result" src="" alt="">
-		<h2>Your captured image will appear here</h2>
-		<p><button onclick="RGB()">Use image</button></p>
-		
 		<canvas id="myCanvas" width="250" height="300">	Your browser does not support the HTML5 canvas tag.</canvas>
+		<p><button onclick="RGB()" type="button" class="btn btn-secondary btn-sm">Use image</button></p>
 		<div id="my_camera"></div>
 	</div>
     </center>
