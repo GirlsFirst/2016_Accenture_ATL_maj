@@ -29,9 +29,3 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 }
-
-.camheader{
-	position: absolute;
-	top: 10px;
-	left: 10px; 
-}

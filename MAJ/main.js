@@ -20,7 +20,7 @@ function getMatch(r, g, b){
 	if ( 225 <= r && r <= 255 ){
 		 if (0 <= g && g <= 255){
 			 if (0 <= b && b <= 255) {
-				 return "MatteCameo, MatteBisque, MatteIvory, MatteSuede";}
+				 return "Matte Light";}
 			 else {
 				 return "";
 			} 
@@ -29,14 +29,14 @@ function getMatch(r, g, b){
 	else if ( 170 <= r && r <= 219 ){
 		 if (0 <= g && g <= 255){
 			if (0 <= b && b <= 255) {
-				 return "MatteBeige, MatteCaramel";}
+				 return "Matte Medium";}
 			 else {
 				 return "";
 			 } } }
 	else if ( r <= 169 ){
 		 if (0 <= g && g <= 255){
 			 if (0 <= b && b <= 255) {
-				 return "MatteToffee, MatteMocha";}
+				 return "Matte Dark";}
 			 else {
 				 return "";
 			 } 
