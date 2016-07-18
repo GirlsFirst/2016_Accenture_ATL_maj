@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css"> 
+</head>
+<body>
+<script src="webcam.js"></script>
+<script src="main.js"></script>
+    <div id="my_camera" style="width:320px; height:240px; center"></div>
+    
+    <script language="JavaScript">	
+	
+        Webcam.attach( '#my_camera' );
+		var red = 0;
+		var green = 0;
+		var blue = 0;
+        function take_snapshot() {
+			document.getElementById("new").style.display = "block";
+          
+			var c = document.getElementById("myCanvas");
+			 Webcam.snap( function() {
+				// the webcam image is now in your own canvas
+			}, myCanvas );
+			var ctx = c.getContext("2d");
+			var imgaData = ctx.getImageData(30,30,30,30);
+			red = imgaData.data[0];
+			green = imgaData.data[1];
+			blue= imgaData.data[2];
+		}
+		function RGB(){
+			document.getElementById("test").innerHTML = getMatch(red, green, blue); 
+		}
+    
+
+    </script>
+	<center>
+	<a href="javascript:void(take_snapshot())">Take Snapshot</a>	
+	<div id = "new" style = "display:none">
+		<img id="my_result" src="" alt="">
+		<h2>Your captured image will appear here</h2>
+		<p><button onclick="RGB()">Use image</button></p>
+		
+		<canvas id="myCanvas" width="250" height="300">	Your browser does not support the HTML5 canvas tag.</canvas>
+		<div id="my_camera"></div>
+	</div>
+    </center>
+	<p id="test" ></p>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-/* h5 {
+h6 {
     position: absolute;
     left: 700px;
     top: 350px;
@@ -21,7 +21,7 @@ h3 {
     position: absolute;
     left: 700px;
     top: 700px;
-} */
+}
 body{
 	background: url(pics/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
