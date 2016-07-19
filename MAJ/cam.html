@@ -7,10 +7,11 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-<center><h1> Concealers </h1></center>
 <center><img src="pics/logo.png"  alt="MAJ Logo" height="80" width="152"> </center>
+<center><h1> Concealers </h1></center>
 <center><h1>Take a picture of the section of skin you want to be matched. </h1></center>
 <center><h5>We recommend taking the picture in natural light. </h5></center>
+<center><h5>NOTE: Have your whole hand in frame. </h5></center>
 <script src="webcam.js"></script>
 <script src="main.js"></script>
     <div id="my_camera" style="width:320px; height:240px; margin:0 auto;"></div>
@@ -29,7 +30,7 @@
 				// the webcam image is now in your own canvas
 			}, myCanvas );
 			var ctx = c.getContext("2d");
-			var imgaData = ctx.getImageData(30,30,30,30);
+			var imgaData = ctx.getImageData(160,120,30,30);
 			red = imgaData.data[0];
 			green = imgaData.data[1];
 			blue= imgaData.data[2];
@@ -80,13 +81,13 @@
 	<a href="javascript:void(take_snapshot())"class="btn btn-primary btn-lg active" role="button">Take Snapshot</a>	
 	<div id = "new" style = "display:none">
 		<img id="my_result" src="" alt="">
-		<canvas id="myCanvas" width="250" height="300">	Your browser does not support the HTML5 canvas tag.</canvas>
+		<canvas id="myCanvas" width="250" height="250">	Your browser does not support the HTML5 canvas tag.</canvas>
 		<p><button onclick="RGB()" type="button"  class="btn btn-secondary btn-sm">Use image</button></p>
 		<div id="my_camera"></div>
 	</div>
     </center>
 	<p id="test" ></p>
-	<a class="home" href="main.html">
+	<a id="home" href="main.html" class="btn btn-primary">
 		<span class="glyphicon glyphicon-home"></span> HOME 
 	</a>
 	<div id="call"></div>

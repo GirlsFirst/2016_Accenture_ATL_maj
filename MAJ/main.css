@@ -37,7 +37,7 @@ body{
 	font-weight:bold;
 }
 
-.home{
+#home{
 	position:absolute;
 	top: 20px;
 	right: 20px;
