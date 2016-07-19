@@ -7,7 +7,10 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div><center><h2>Take a picture of the section of skin you want to be matched. </h2></center></div>
+<center><h1> Concealers </h1></center>
+<center><img src="pics/logo.png"  alt="MAJ Logo" height="80" width="152"> </center>
+<center><h1>Take a picture of the section of skin you want to be matched. </h1></center>
+<center><h5>We recommend taking the picture in natural light. </h5></center>
 <script src="webcam.js"></script>
 <script src="main.js"></script>
     <div id="my_camera" style="width:320px; height:240px; margin:0 auto;"></div>
@@ -35,16 +38,36 @@
 			var colorCode = getMatch(red, green, blue); 
 			showProducts(colorCode);
 		}
-		function showProducts(colorCode){
-	if (colorCode == "Matte Light")
+		function showProducts(code){
+	if (code == "MatteCameo")
 	{
 		window.open('Light.html');
 	} 
-	else if(colorCode == "Matte Medium")
+	else if(code == "MatteBisque")
+	{
+		window.open('Light.html');
+	}
+	else if(code == "MatteIvory")
+	{
+		window.open('LightMeduim.html');
+	}
+	else if(code == "MatteSuede")
+	{
+		window.open('LightMeduim.html');
+	}
+	else if(code == "MatteBeige")
 	{
 		window.open('Medium.html');
 	}
-	else if(colorCode == "Matte Dark")
+	else if(code == "MatteCaramel")
+	{
+		window.open('Medium.html');
+	}
+	else if(code == "MatteToffee")
+	{
+		window.open('Dark.html');
+	}
+	else if(code == "MatteMocha")
 	{
 		window.open('Dark.html');
 	}

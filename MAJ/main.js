@@ -16,38 +16,80 @@ var myarray = [MatteCameo, MatteBisque, MatteIvory, MatteBeige, MatteSuede, Matt
 
 function getMatch(r, g, b){
 	
-	if ( 225 <= r && r <= 255 ){
-		 if (0 <= g && g <= 255){
-			 if (0 <= b && b <= 255) {
-				 return "Matte Light";}
-			 else {
-				 return "";
+	alert(red + " " + green + " " + blue)
+	if ( 200 <= r && r <= 255 ){
+		 if (225 <= g && g <= 255){
+			if (b <= 255) {
+				return "MatteCameo";
+				} 
 			} 
-			} 
-	}
-	else if ( 170 <= r && r <= 219 ){
-		 if (0 <= g && g <= 255){
-			if (0 <= b && b <= 255) {
-				 return "Matte Medium";}
-			 else {
-				 return "";
-			 } } }
-	else if ( r <= 169 ){
-		 if (0 <= g && g <= 255){
-			 if (0 <= b && b <= 255) {
-				 return "Matte Dark";}
-			 else {
-				 return "";
-			 } 
-		} else {
-			return "Sorry no match!"
-		} 
-		}
+				
+		else if (213 <= g && g <= 224){
+			if (b <= 255){
+				return "MatteBisque";
+				}
+				}
+		
+		else if (194 <= g && g <= 212){
+			if (b <= 255){
+				return "MatteIvory";
+				}
+				}
+				
+		else if (b <= 193){
+			if (b <= 255){
+				return "MatteSuede";
+				}
+				}
+		
+		else {
+			return "Out of Stock"; 
+			}
+			}
+	
+	
+	else if ( 140 <= r && r <= 199 ){
+		if (147 <= g && g <= 255){
+			if (b <= 255) {
+				return "MatteBeige";
+				} 
+				} 
+				
+		else if (g <= 149){
+			if (b <= 255){
+				return "MatteCaramel";
+				}
+				}
+				
+		else {
+			return "Out of Stock"; 
+			}
+			}  
+			
+			
+	else if ( r <= 139 ){
+		if (80 <= g && g <= 255){
+			if (b <= 255) {
+				return "MatteToffee";
+				} 
+				} 
+				
+		else if (g <= 79){
+			if (b <= 255){
+				return "MatteMocha";
+				}
+				}
+				
+		else {
+			return "Out of Stock"; 
+			}
+			}  
+	
+	
 	else {
-		return "ERROR!!!";
+		return "error";
+		}
 	}
-	}
-
 
 	
 	
