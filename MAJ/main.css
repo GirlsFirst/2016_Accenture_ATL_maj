@@ -29,3 +29,16 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+ h1.match{
+	text-align:center;
+	font-size:56px; 
+	font-family:"Trebuchet MS", Helvetica,sans-serif;
+	font-weight:bold;
+}
+
+.home{
+	position:absolute;
+	top: 20px;
+	right: 20px;
+}

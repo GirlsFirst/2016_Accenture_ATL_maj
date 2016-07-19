@@ -16,7 +16,6 @@ var myarray = [MatteCameo, MatteBisque, MatteIvory, MatteBeige, MatteSuede, Matt
 
 function getMatch(r, g, b){
 	
-	alert(red+"  "+green+"  "+blue);
 	if ( 225 <= r && r <= 255 ){
 		 if (0 <= g && g <= 255){
 			 if (0 <= b && b <= 255) {
@@ -24,7 +23,7 @@ function getMatch(r, g, b){
 			 else {
 				 return "";
 			} 
-		} 
+			} 
 	}
 	else if ( 170 <= r && r <= 219 ){
 		 if (0 <= g && g <= 255){

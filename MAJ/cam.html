@@ -35,6 +35,21 @@
 			var colorCode = getMatch(red, green, blue); 
 			showProducts(colorCode);
 		}
+		function showProducts(colorCode){
+	if (colorCode == "Matte Light")
+	{
+		window.open('Light.html');
+	} 
+	else if(colorCode == "Matte Medium")
+	{
+		window.open('Medium.html');
+	}
+	else if(colorCode == "Matte Dark")
+	{
+		window.open('Dark.html');
+	}
+	}
+		
     
 
     </script>
@@ -43,13 +58,14 @@
 	<div id = "new" style = "display:none">
 		<img id="my_result" src="" alt="">
 		<canvas id="myCanvas" width="250" height="300">	Your browser does not support the HTML5 canvas tag.</canvas>
-		<p><button onclick="RGB()" type="button" class="btn btn-secondary btn-sm">Use image</button></p>
+		<p><button onclick="RGB()" type="button"  class="btn btn-secondary btn-sm">Use image</button></p>
 		<div id="my_camera"></div>
 	</div>
     </center>
 	<p id="test" ></p>
-	<a id="homebtn" href="http://localhost:8080/Test/main.html" class="btn btn-primary btn-lg">
-    <span class="glyphicon glyphicon-home"></span> HOME 
+	<a class="home" href="main.html">
+		<span class="glyphicon glyphicon-home"></span> HOME 
 	</a>
+	<div id="call"></div>
 </body>
 </html>
