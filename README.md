@@ -1,7 +1,7 @@
 # 2016_Accenture_ATL_maj
-App to match your skin tone to the perfect foundation
-madina
-j'nya
-ariel Sanders
+Find the perfect make-up match for you
+Madina
+J'nya
+Ariel 
 License:
 MIT License
